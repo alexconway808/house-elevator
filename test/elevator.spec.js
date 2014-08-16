@@ -31,6 +31,7 @@ describe('An Elevator in a Home', function () {
   describe('should take a passenger from the top floor', function () {
     it('to the first floor', function () {
       var ride = elevator.goto(3, '0');
+      console.log("testing", ride);
 
       expect(ride).to.equal(-3);
       expect(ride).to.not.be.a('string');
